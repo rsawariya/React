@@ -1,9 +1,11 @@
-# React
-React revise latest updates
+# React Revision
 
 # Steps to create new app every time for new task practice
-Step 1: Create vite app 
-        [ npm create vite@latest ]
+
+* Step 1: Create vite app 
+-----------------------------------------------------------
+    npm create vite@latest
+-----------------------------------------------------------
 
 Step 2: Move to that directory 
         [ cd `app name` ]
