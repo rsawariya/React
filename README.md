@@ -2,20 +2,26 @@
 
 # Steps to create new app every time for new task practice
 
-1. Step 1: Create vite app 
+Step 1: Create vite app 
 -----------------------------------------------------------
     npm create vite@latest
 -----------------------------------------------------------
 
 Step 2: Move to that directory 
-        [ cd `app name` ]
+-----------------------------------------------------------
+    cd `app name`
+-----------------------------------------------------------
 
 Step 3: Install dependencies 
-        [ npm i ]
+-----------------------------------------------------------
+    npm i
+-----------------------------------------------------------
 
-Step 4.1: Install Tailwind 
-        [ npm install -D tailwindcss postcss autoprefixer ]
-        [ npx tailwindcss init -p ]
+Step 4.1: Install Tailwind
+-----------------------------------------------------------
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
+-----------------------------------------------------------
 
 Step 4.2: Configure Template path in tailwind.config.ts (Note: Replace below code)
 ---------------------------------------------------------
