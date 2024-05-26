@@ -1,13 +1,14 @@
 import { Route, createBrowserRouter, createRoutesFromElements } from "react-router-dom"
 import Layout from "./Layout";
 import { lazy } from "react";
-import PrivateRoute from "./components/PrivateRoute";
+import { PrivateRoute } from "./helpers";
+import CounterUsingRedux from "./apps/counterUsingRedux";
+import AppList from "./components/Dashboard/AppList";
 
 const Home = lazy(() => import("./components/Home"));
 const About = lazy(() => import("./components/About"));
 const GitHub = lazy(() => import("./components/Github"))
 const Fallback = lazy(() => import("./components/Fallback"));
-const Dashboard = lazy(() => import("./components/Dashboard"));
 
 const Router = createBrowserRouter(createRoutesFromElements(
     <>
@@ -25,8 +26,9 @@ const Router = createBrowserRouter(createRoutesFromElements(
             }} />
             <Route path="*" element={<Fallback />} />
         </Route>
-        <Route element={<PrivateRoute />} >
-            <Route path="/dashboard" element={<Dashboard />}></Route>
+        <Route path="/dashboard" element={<PrivateRoute />} >
+            <Route path="counter-app" element={<CounterUsingRedux />}> </Route>
+            <Route path="" element={<AppList />}> </Route>
         </Route>
     </>
 ))
