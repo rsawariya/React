@@ -2,7 +2,7 @@
 
 # Steps to create new app every time for new task practice
 
-*1 Step 1: Create vite app 
+1. Step 1: Create vite app 
 -----------------------------------------------------------
     npm create vite@latest
 -----------------------------------------------------------
