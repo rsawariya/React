@@ -1,6 +1,6 @@
 # React Revision
 
-# Steps to create new app every time for new task practice
+# Steps to create new app every time for new task practice...
 
 Step 1: Create vite app 
 -----------------------------------------------------------
